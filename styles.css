@@ -1,0 +1,78 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url(img/barcelona.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: fixed;
+    background-size: cover;
+}
+
+/* Barra de Navegación */
+.navbar {
+    background-color: #4207e4f8;
+    padding: 1rem 0;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0 1rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: rgb(233, 233, 230);
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #312929;
+}
+
+/* Sección de Artículos Destacados */
+.featured-articles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    padding: 2rem;
+}
+
+.article {
+    opacity: 90%;
+    background-color: #e63232;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    overflow: hidden;
+    width: calc(25% - 1rem);
+    box-shadow: 0 2px 5px rgba(8, 57, 255, 0.1);
+    transition: transform 0.3s;
+}
+
+.article img {
+    width: 100%;
+    height: auto;
+}
+
+.article h2 {
+    color: #fcfafa;
+    font-size: 1.5rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+.article:hover {
+    transform: scale(1.05);
+}
+
